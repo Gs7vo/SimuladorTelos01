@@ -3,7 +3,7 @@ const fs = require("fs");
 // Função para ler dados do arquivo JSON
 function lerDados() {
   return new Promise((resolve, reject) => {
-    fs.readFile("dadossimulador.json", "utf8", (err, data) => {
+    fs.readFile("dadossimulador01.json", "utf8", (err, data) => {
       if (err) reject(err);
       resolve(JSON.parse(data));
     });
